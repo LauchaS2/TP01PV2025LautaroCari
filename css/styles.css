@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #32c770;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.centrar-imagen {
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.museos-lista {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: center; 
+}
+
+
+.museos-lista li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-contacto {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.campo-formulario {
+    margin-bottom: 1rem;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+}
+
+
+.campo-formulario button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.campo-formulario button:hover {
+    background-color: #333;
+}
