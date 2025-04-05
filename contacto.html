@@ -12,7 +12,7 @@
     </header>
     <main>
         <h2 class="titulo">Envíanos tu mensaje</h2>
-        <form action="#" method="post" class="form-contacto">
+        <form action="guardar_contacto.php" method="post" class="form-contacto">
             <div class="campo-formulario">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -30,5 +30,22 @@
             </div>
         </form>
     </main>
+    <script>
+        document.querySelector('.form-contacto').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se recargue la página
+    
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+    
+            console.log("Nuevo mensaje recibido:");
+            console.log("Nombre:", nombre);
+            console.log("Email:", email);
+            console.log("Mensaje:", mensaje);
+    
+            alert("Gracias por tu mensaje, " + nombre + ".");
+            this.reset();
+        });
+    </script>
 </body>
 </html>
